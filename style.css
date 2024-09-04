@@ -99,39 +99,77 @@ letter-spacing: -1.2px;
 padding-top: 50px;
 }
 
-.container > .card-list {
+/* Basic reset */
+body, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-my-works {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+/*added initial card properties*/
+
+.cards {
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    gap: 20px; /* Space between the cards */
-    flex-wrap: wrap; /* Makes the cards responsive */
- 
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 488px !important;
-    height: 596px!important;
-
+    background: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
 .card img {
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
 
-.card-body {
-    padding: 20px;
-    text-align: center;
+.card h3 {
+    margin: 15px;
+    font-size: 1.5rem;
 }
 
-.card-text {
-    font-family: "Montserrat Alternates";
-    font-size: 1.5em;
-    color: #0E0C31;
+.card p {
+    margin: 0 15px 15px;
+    font-size: 1rem;
+    color: #555;
 }
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}
+
 
 #contact{
     width: 100%;
