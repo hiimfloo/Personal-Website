@@ -121,6 +121,8 @@ h2 {
 
 /*added initial card properties*/
 
+
+
 .cards {
     display: flex;
     flex-wrap: wrap;
