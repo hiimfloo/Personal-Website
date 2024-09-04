@@ -1,0 +1,187 @@
+nav{
+    position: fixed;
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    z-index: 1000;
+    
+    color: #0E0C31;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.36px;
+
+   
+}
+
+nav .resume-btn {
+    color: #0E0C31 !important;
+    text-align: center;
+    font-family: "Montserrat Alternates" !important;
+    font-size: 24px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.36px;
+}
+/*Add gap between the navbar elements*/
+.navbar-nav .nav-item {
+    margin-right: 64px; /* Add space between the items */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Remove the margin from the last item */
+}
+
+
+#hero{
+    width: 100%;
+    height: 768px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #EAE0F5 0%, rgba(215, 241, 113, 0.43) 100%);
+}
+
+
+
+.container-hero > h2 {
+    font-family: "Lust" ;
+    padding-left: 2%;
+    font-size: 48px;
+    
+}
+
+.container-hero > h4 {
+    font-family: "Montserrat Alternates" ;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    padding-top: 100px;
+    font-size: 2em;
+    
+}
+
+#about-me{
+    width: 100%;
+    height: 768px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #241535;
+}
+
+#my-works  {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+ 
+   
+    background: #F5FFCF6E;
+}
+
+#my-works >.container-my-works> h2{
+color: #0E0C31;
+text-align: center;
+font-family: Lust;
+font-size: 80px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.2px;
+padding-top: 50px;
+}
+
+.container > .card-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the cards */
+    flex-wrap: wrap; /* Makes the cards responsive */
+ 
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 488px !important;
+    height: 596px!important;
+
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-text {
+    font-family: "Montserrat Alternates";
+    font-size: 1.5em;
+    color: #0E0C31;
+}
+
+#contact{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background: rgba(215, 241, 113, 0.43);
+}
+
+#contact > .container-contact > h2{
+    color: #0E0C31;
+    text-align: center;
+    font-family: Lust;
+    font-size: 5em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.2px;
+    padding-top: 50px;
+    }
+
+#contact > .container-contact > p{
+    color: #000;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 3em;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.96px;
+    
+}
+#footer{
+    background: #0E0C31;
+    width: 100%;
+    height:10vh;
+
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+  
+}
+
+#footer >h2{
+    color: #EAE0F5;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.6px;
+    }
